@@ -1,9 +1,9 @@
  @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Quicksand:wght@300..700&display=swap');
  * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
 :root{
     --blue: #62B6CB;
     --yellow: #F4D35E;
@@ -23,6 +23,7 @@
 
 body {
            font-family: "Quicksand", sans-serif; 
+           padding: 0 !important;
         }
     p{
         font-weight: 300;
@@ -31,6 +32,7 @@ body {
     }
 a{
     text-decoration: none;
+    white-space: nowrap !important;
 }
 h1,h2,h3,h4,h5,h6{
     font-family: var(--head-font);
@@ -299,9 +301,7 @@ h1,h2,h3,h4,h5,h6{
 
         /* Tablet Responsive */
         @media screen and (max-width: 992px) {
-            body{
-                padding: 0 2rem;
-            }
+            
             .grid-container {
                 grid-template-columns: repeat(2, 1fr);
                 grid-template-rows: repeat(3, 200px);
@@ -319,9 +319,6 @@ h1,h2,h3,h4,h5,h6{
 
         /* Mobile Responsive */
         @media screen and (max-width: 768px) {
-            body {
-                padding: 1rem;
-            }
 
             .grid-container {
                 grid-template-columns: 1fr;
@@ -422,7 +419,7 @@ h1,h2,h3,h4,h5,h6{
 @media screen and (max-width: 480px){
     .container{
         max-width: 100%;
-        padding: 0 1rem;
+        /* padding: 0 1rem; */
     }
     
 }
@@ -477,13 +474,28 @@ h1,h2,h3,h4,h5,h6{
 @media screen and (max-width: 992px){
     .col2-section{
         flex-direction: column;
+        align-items: center;
     }
+    .text-content{
+    padding: 1.5rem 1rem;
+}
+    .image-holder img{
+    width: 400px;
+}
     .col2-section> .left, .right{
         width: 90%;
     }
 }
-@media screen and (max-width: 768px){}
-@media screen and (max-width: 480px){}
+@media screen and (max-width: 768px){
+      .image-holder img{
+    width: 350px;
+}
+}
+@media screen and (max-width: 480px){
+        .image-holder img{
+    width: 300px;
+}
+}
 /* support section 2 end*/
 
 /* Cards container design  */
@@ -553,7 +565,15 @@ h1,h2,h3,h4,h5,h6{
                 grid-template-columns: repeat(2, 1fr);
             }
 }
-@media screen and (max-width: 768px){}
+@media screen and (max-width: 768px){
+  .cards-container{
+    padding: 2.5rem 0em;
+  }
+  .card-overlay h3{
+    font-size: 1rem;
+    text-align: center;
+  }
+}
 @media screen and (max-width: 480px){}
 /* Cards container design end */
 
@@ -614,9 +634,16 @@ h1,h2,h3,h4,h5,h6{
     .person-section{
         flex-direction: column;
         justify-content: left;
+        /* align-items: center; */
     }
 }
-@media screen and (max-width: 768px){}
+@media screen and (max-width: 768px){
+  .bg-yellow .image-wraps img{
+    width: 300px;
+    justify-self: right;
+    /* height: 600px; */
+}
+}
 @media screen and (max-width: 480px){}
 /* about person section  end*/
 
@@ -646,7 +673,7 @@ h1,h2,h3,h4,h5,h6{
 .profile-image img{
     width: 100%;
     border-radius: 100%;
-    border: 8px solid var(--orange); 
+    border: 5px solid var(--orange); 
     
 }
 .profile-image{
@@ -746,7 +773,7 @@ h1,h2,h3,h4,h5,h6{
 }
 @media screen and (max-width: 480px){
   .profile-image{
-    width: 100% !important;
+    width: 70% !important;
   }
 }
 /* Profile section end */
@@ -829,11 +856,19 @@ h1,h2,h3,h4,h5,h6{
 }
 @media screen and (max-width: 480px){
     .list-item-wrapper{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 }
-
+@media screen and (max-width: 768px){
+  .card-place{
+    width: 100% !important;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+  }
+}
 /* list items wrapper end  */
+
 
 .head{
     font-size: 2rem;
@@ -968,7 +1003,11 @@ h1,h2,h3,h4,h5,h6{
     padding: 0 1rem;
     
 }
-
+    @media (max-width: 768px){
+      .field-details .field-wrapper{
+        max-width: 100%;
+      }
+    }
 /* Field details section wrapper end */
 
 /* circle badge design  */
@@ -1202,12 +1241,14 @@ h1,h2,h3,h4,h5,h6{
     }
 
     /* Mobile */
-    @media (max-width: 640px) {
+    @media (max-width: 768px) {
       .license-details-grid {
         grid-template-columns: 1fr;
         gap: 15px;
       }
-
+      .license-card{
+        padding-left: 1rem;
+      }
       .specialties-box {
         padding: 25px;
       }
