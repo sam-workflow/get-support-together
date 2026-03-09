@@ -1,842 +1,746 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brea's Home page</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
-
 <body>
-    <!-- Navbar Design -->
+    <!-- Hero Section  -->
+     <section class="gstpp-hero">
+  <div class="gstpp-hero__inner">
 
+    <div class="gstpp-hero__photo-col">
+      <div class="gstpp-hero__photo-wrap">
+        <div class="gstpp-hero__photo">
+          {{Record_Image}}
+          <!-- If needed later, replace with {{Image_URL}} -->
+        </div>
+      </div>
+    </div>
 
-    <nav>
-        <div class="nav-container">
-            <a href="index.html" class="logo"><img
-                    src="https://res.cloudinary.com/dpoaabizd/image/upload/v1763998552/Brea%27s%20asset/img.jpg_tibloo.png"
-                    alt=""></span></a>
+    <div class="gstpp-hero__content">
+      
 
-            <ul class="nav-menu">
-                <li><a href="about-page.html">ABOUT US</a></li>
-                <li><a href="#about">FIND A PROVIDER</a></li>
-                <li><a href="#services">CRISIS RESOURCES</a></li>
-                <li><a href="#portfolio">EVENTS + PROGRAMS</a></li>
-                <li><a href="#blog">LEARN ABOUT MENTAL HEALTH</a></li>
-                <li><a href="#contact">FOR PROVIDERS</a></li>
+      <h1 class="gstpp-hero__name">
+        <span class="gstpp-hero__name-bold">
+          {{Prefix}} {{First_Name}} {{Middle_Initial}}. {{Last_Name}}, {{Suffix}}
+        </span>
+        <span class="gstpp-hero__pronouns">({{Pronouns}})</span>
+      </h1>
+
+      <div class="gstpp-hero__account">{{Parent_Account}}</div>
+
+      <div class="gstpp-hero__title">{{Title}}</div>
+
+      <div class="gstpp-hero__meta">
+        <div class="gstpp-hero__meta-row">
+          <span class="gstpp-hero__meta-label">Licensed State(s):</span>
+          <span class="gstpp-hero__meta-value">{{Licensed_State_s}}</span>
+        </div>
+
+        <div class="gstpp-hero__meta-row">
+          <span class="gstpp-hero__meta-label">Support Type(s) Offered:</span>
+          <span class="gstpp-hero__meta-value">{{Contact_Offerings}}</span>
+        </div>
+      </div>
+
+      <div class="gstpp-hero__contact">
+        <a class="gstpp-hero__contact-link" href="mailto:{{Admissions_Email}}">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+        <a class="gstpp-hero__contact-link" href="tel:{{Appointment_Line}}">
+          <i class="fa-solid fa-phone-volume"></i>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+    <!-- Hero Section End -->
+     <section class="gstpp-about" id="gst-about">
+
+  <!-- Top section nav -->
+  <nav class="gstpp-about__nav" aria-label="Provider content navigation">
+    <div class="gstpp-about__nav-inner">
+      <a class="gstpp-about__nav-link" href="#gst-about">ABOUT SERVICES</a>
+      <a class="gstpp-about__nav-link" href="#gst-licensing">LICENSING + EDUCATION</a>
+      <a class="gstpp-about__nav-link" href="#gst-location">LOCATION + HOURS</a>
+      <a class="gstpp-about__nav-link" href="#gst-finances">FINANCES</a>
+      <a class="gstpp-about__nav-link" href="#gst-events">UPCOMING EVENTS</a>
+    </div>
+  </nav>
+
+  <!-- Section heading -->
+  <div class="gstpp-about__heading-wrap">
+    <div class="gstpp-about__heading">
+      ABOUT MY MENTAL HEALTH SERVICES
+    </div>
+  </div>
+
+  <!-- Main content -->
+  <div class="gstpp-about__content">
+    <div class="gstpp-about__video-col">
+      <div class="gstpp-about__video">
+        {{Office_Interior_3}}
+      </div>
+    </div>
+
+    <div class="gstpp-about__text-col">
+      <div class="gstpp-about__quote gstpp-about__quote--open">“</div>
+
+      <div class="gstpp-about__text">
+        {{Intro_Message_to_PP_s}}
+      </div>
+
+      <div class="gstpp-about__quote gstpp-about__quote--close">”</div>
+
+      <div class="gstpp-about__social">
+        <a class="gstpp-about__social-link" href="mailto:{{Admissions_Email}}"><i class="fa-solid fa-envelope"></i></a>
+        <a class="gstpp-about__social-link" href="tel:{{Appointment_Line}}"><i class="fa-solid fa-phone-volume"></i></a>
+        <a class="gstpp-about__social-link" href="{{Website}}"><i class="fa-solid fa-globe"></i></a>
+        <a class="gstpp-about__social-link" href="{{Facebook}}"><i class="fa-brands fa-facebook"></i></a>
+        <a class="gstpp-about__social-link" href="{{Instagram}}"><i class="fa-brands fa-square-instagram"></i></a>
+        <a class="gstpp-about__social-link" href="{{Tik_Tok}}"><i class="fa-brands fa-tiktok"></i></a>
+        <a class="gstpp-about__social-link" href="{{Twitter_X}}"><i class="fa-brands fa-x-twitter"></i></a>
+        <a class="gstpp-about__social-link" href="{{YouTube_Channel}}"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+
+</section>
+<!-- Carosoul Section  -->
+
+<section class="gstpp-photos-section">
+  <div class="gstpp-photos-section__inner">
+
+    <div class="gstpp-photos-grid">
+      <div class="gstpp-photo-thumb">
+        <!-- thumbnail 1 -->
+      </div>
+
+      <div class="gstpp-photo-thumb">
+        <!-- thumbnail 2 -->
+      </div>
+
+      <div class="gstpp-photo-thumb">
+        <!-- thumbnail 3 -->
+      </div>
+
+      <div class="gstpp-photo-thumb">
+        <!-- thumbnail 4 -->
+      </div>
+
+      <div class="gstpp-photo-thumb">
+        <!-- thumbnail 5 -->
+      </div>
+    </div>
+
+    <div class="gstpp-photos-note">
+      <!--  connect this with Picture_Folder_ID -->
+      <!-- likely source: {{Picture_Folder_ID}} -->
+    </div>
+
+  </div>
+</section>
+
+<!-- Carosoul Section End -->
+
+<!-- Mental Health Support Offered  -->
+
+<section class="gstpp-support" id="gst-services">
+  <div class="gstpp-support__overlay">
+    <div class="gstpp-support__inner">
+
+      <h2 class="gstpp-support__title">Mental Health Support Offered</h2>
+
+      <div class="gstpp-support__grid">
+
+        <!-- LEFT COLUMN -->
+        <div class="gstpp-support__left">
+
+          <div class="gstpp-support__item">
+            <div class="gstpp-support__icon">
+              <img src="https://www.getsupporttogether.com/icons/mental-health-provider-support-types.png" alt="Support types icon">
+            </div>
+
+            <div class="gstpp-support__content">
+              <h3 class="gstpp-support__heading">How I Provide Support</h3>
+              <div class="gstpp-support__body gstpp-support__body--two-col">
+                {{Contact_Offerings}}
+              </div>
+            </div>
+          </div>
+
+          <div class="gstpp-support__item">
+            <div class="gstpp-support__icon">
+              <img src="https://www.getsupporttogether.com/icons/mental-health-provider-specialties.png" alt="Specialties icon">
+            </div>
+
+            <div class="gstpp-support__content">
+              <h3 class="gstpp-support__heading">Specialized Mental Health Support</h3>
+              <div class="gstpp-support__body">
+                {{NEED TO FIGURE OUT}}
+              </div>
+            </div>
+          </div>
+
+          <div class="gstpp-support__item">
+            <div class="gstpp-support__icon">
+              <img src="https://www.getsupporttogether.com/icons/mental-health-provider-treatment-methods.png" alt="Treatment methods icon">
+            </div>
+
+            <div class="gstpp-support__content">
+              <h3 class="gstpp-support__heading">Treatment Approaches Available</h3>
+              <div class="gstpp-support__body">
+                {{IN WORKS - MH TREATMENT MODALITIES CUSTOM MODULE}}
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <div class="gstpp-support__right">
+          <div class="gstpp-support__panel">
+            <h3 class="gstpp-support__heading gstpp-support__heading--large">
+              Generalized Mental Health Expertise
+            </h3>
+
+            <div class="gstpp-support__body">
+              {{Contacts_MH_Terms}}
+            </div>
+
+            <button class="gstpp-support__button" type="button">See more</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Mental Health Support Offered End -->
+
+<!-- Clientele Supported  -->
+
+<section class="gstpp-clientele" id="gst-clientele">
+  <div class="gstpp-clientele__inner">
+
+    <h2 class="gstpp-clientele__title">
+      Clientele Supported
+    </h2>
+
+    <div class="gstpp-clientele__badges">
+      <div class="gstpp-clientele__badge">
+        ACCEPTING NEW CLIENTS
+      </div>
+
+      <div class="gstpp-clientele__badge">
+        NATIONAL CLIENTELE WELCOME
+      </div>
+    </div>
+
+    <div class="gstpp-clientele__grid">
+      <div class="gstpp-clientele__card">
+        <div class="gstpp-clientele__card-head"><h4>How I See Clients</h4></div>
+        <div class="gstpp-clientele__card-body">
+            <ul>
+                <li>{{Session_Types}}</li>
             </ul>
-
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+          
         </div>
-    </nav>
-    <!-- Navbar Design -->
+      </div>
 
-    <!-- Profile section  -->
-    <div class="container">
-        <div class="profile-section">
-            <div class="profile-wrapper">
-                <div class="profile-image">
-                    <img src="https://res.cloudinary.com/dpoaabizd/image/upload/v1763998549/Brea%27s%20asset/brea-copy_swnjoc.jpg"
-                        alt="Profile Image">
-                </div>
-                <div class="profile-details">
-                    <div class="profile-name-holder">
-                        <div class="profile-name">
-                            <h1>Brea Black</h1>
-                            <div class="post large-text">Get Support Together</div>
-                            <div class="post-info">
-                                <div class="info">Licensed Professional Counselor</div>
-                                <div class="sub-info small-text">Mental Health Treatment Provider</div>
-                            </div>
-
-                        </div>
-                        <div class="profile-social">
-                            <a href="#">
-                                <i class="fa-solid fa-phone f-icon-small"></i>
-                            </a>
-                            <a href="#"><i class="fa-solid fa-envelope f-icon-small"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- tag  -->
-
-                <div class="profile-corner-tag">Accepting New Client</div>
-
-                <!-- tag  -->
-            </div>
-
-            <div class="profile-about fw-600">
-                <div class="profile-ab-txt">Located in: <span>City, State (display in bold for emphasis for you
-                        only)</span> </div>
-                <div class="profile-ab-txt">I offer patients: <span>Offerings (dynamic to list multiples with
-                        comma)</span> </div>
-                <div class="profile-ab-txt">I see patients: <span> Session Types (dynamic to list multiples with
-                        comma)</span> </div>
-                <div class="profile-ab-txt">Language(s) Spoken: <span>Language (dynamic to list multiples with
-                        comma)</span> </div>
-            </div>
+      <div class="gstpp-clientele__card">
+        <div class="gstpp-clientele__card-head"><h4>Ages Served</h4></div>
+        <div class="gstpp-clientele__card-body">
+            <ul>
+                <li>{{Age_groups_worked_with}}</li>
+            </ul>
+          
         </div>
-    </div>
-    <!-- Profile section  end-->
-    <div class="space-large"></div>
-    <!-- section 2 with video holder  -->
-    <div class="container">
-        <div class="text-video-section">
-            <div class="col2-section">
-                <div class="left-text-holder">
-                    <p>The quick brown fox jumped over the lazy dog. The quick brown fox jumped over the lazy dog. The
-                        quick brown fox jumped over the lazy dog. The quick brown fox jumped over the lazy dog. The
-                        quick brown fox jumped over the lazy dog. The quick brown fox jumped over the lazy dog. The
-                        quick brown fox jumped over the lazy dog. The quick brown fox jumped over the lazy dog. The
-                        quick brown fox jumped over the lazy dog. The quick brown fox jumped over the lazy dog. The
-                        quick brown fox jumped over the lazy dog. NEED TO KNOW HOW MANY CHARACTERS CAN FIT IN THE BOX AS
-                        DESIRED TO NOT MESS UP LAYOUT.</p>
-                </div>
-                <div class="video-card-holder">
-                    <div class="video-card">
-                        <div class="head">you can put <br> video inside it.</div>
-                    </div>
-                </div>
-            </div>
+      </div>
 
+      <div class="gstpp-clientele__card">
+        <div class="gstpp-clientele__card-head"><h4>Number of Participants Worked With</h4></div>
+        <div class="gstpp-clientele__card-body">
+          <ul>
+            <li>{{worked_with_in_sessions}}</li>
+          </ul>
         </div>
+      </div>
 
+      <div class="gstpp-clientele__card">
+        <div class="gstpp-clientele__card-head"><h4>Communities Welcomed</h4></div>
+        <div class="gstpp-clientele__card-body gstpp-clientele__card-body--two-col">
+          <ul>
+            <li>{{What_communities_do_you_work_with}}</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="gstpp-clientele__card">
+        <div class="gstpp-clientele__card-head"><h4>Minimum Participant Requirements</h4></div>
+        <div class="gstpp-clientele__card-body">
+          <ul>
+            <li>{{Min_Participant_Requirements}}</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="gstpp-clientele__card gstpp-clientele__card--tall">
+        <div class="gstpp-clientele__card-head"><h4>Location Requirements to Receive Support</h4></div>
+        <div class="gstpp-clientele__card-body">
+          
+          <ul>
+            <li>{{Location_Requirements}}</li>
+          </ul>
+        </div>
+      </div>
     </div>
 
+  </div>
+</section>
 
+<!-- Clientele Supported End -->
 
+<!-- Get to Know Me section  -->
 
-    <!-- section 2 with video holder  end-->
-    <div class="space-large"></div>
-    <div class="space-large">
-        <div class="space-large"></div>
-    </div>
+<section class="gstpp-knowme" id="gst-know-me">
 
+  <div class="gstpp-knowme__inner">
 
+    <div class="gstpp-knowme__grid">
 
-    <!-- list items wrapper -->
-    <div class="container">
-        <div class="list-item-wrapper">
-            <div class="list-item"><a href="#">GET TO KNOW ME</a></div>
-            <div class="list-item"><a href="#">LICENSING + EDUCATION</a></div>
-            <div class="list-item"><a href="#">LOCATIONS + HOURS</a></div>
-            <div class="list-item"><a href="#">UPCOMING EVENTS</a></div>
-            <div class="list-item"><a href="#">FINANCIALS</a></div>
-        </div>
-    </div>
-    <!-- list items wrapper end -->
-    <div class="space-large"></div>
+      <!-- LEFT COLUMN -->
+      <div class="gstpp-knowme__left">
 
-    <!-- General Practice Areas -->
-
-    <div class="container">
-        <div class="genarel-section-wrapper">
-
-            <div class="genarel-section">
-                <div class="head">GET TO KNOW ME</div>
-                <div class="g-section">
-                    <h2 class="g-section-title">My general practice areas include:</h2>
-                    <div class="g-grid-container">
-                        <div class="g-grid-item">Addictions</div>
-                        <div class="g-grid-item">Anxiety Concerns</div>
-                        <div class="g-grid-item">Eating/Body Image Related Issues</div>
-                    </div>
-                </div>
-
-                <!-- Mental Health Specialties -->
-                <div class="g-section">
-                    <h2 class="g-section-title">My mental health specialties include:</h2>
-                    <div class="g-grid-container">
-                        <div class="g-grid-item">Accute Stress Disorder</div>
-                        <div class="g-grid-item">Alzheimer's Disease or Dementia</div>
-                        <div class="g-grid-item">Avoidant or Restrictive Food Intake or Binge-Eating</div>
-                        <div class="g-grid-item">Brief Psychotic Disorder</div>
-                    </div>
-                </div>
-
-                <!-- Treatment Modalities -->
-                <div class="g-section">
-                    <h2 class="g-section-title">Treatment modalities I use with clients include:</h2>
-                    <div class="g-grid-container">
-                        <div class="g-grid-item">Emotional Freedom Technique</div>
-                        <div class="g-grid-item">Eye Movement Desensitization and Reprocessing (EMDR)</div>
-                        <div class="g-grid-item">Family Systems Therapy</div>
-                        <div class="g-grid-item">Intervention Therapy</div>
-                        <div class="g-grid-item">Systematic Desensitization Therapy</div>
-                        <div class="g-grid-item">Trauma-Informed Care</div>
-                    </div>
-                </div>
-
-                <div class="space-large"></div>
-            </div>
-            <div class="card-place">
-                <!-- Whith card  -->
-
-                <div class="white-card">
-                    <div class="wc-wrapper">
-                        <h2>ABOUT MY CLIENTS</h2>
-                        <div class="wc-details">
-                            <div class="client-age">
-                                <p>Client ages I work with:</p>
-                                <p>Early Childhood (0 to 5)</p>
-                                <p>Middle Childhood (6 to 12)</p>
-                            </div>
-                            <div class="client-session">
-                                <p>Number of clients in sessions:</p>
-                                <p>Individuals</p>
-                                <p>Couples</p>
-                                <p>Families</p>
-                            </div>
-                            <div class="comunity">
-                                <p>Communities of identification:</p>
-                                <div class="bg-txt"><a href="#">All Are Welcome - Open to All</a></div>
-                            </div>
-                            <div class="bg-txt"><a href="#">Neurodivergent</a></div>
-
-                            <div class="social-connet">
-                                <div>How they see me:</div>
-                                <div class="space-small"></div>
-                                <i class="fa-brands fa-facebook f-icon-medium"></i>
-                                <i class="fa-brands fa-facebook f-icon-medium"></i>
-                                <i class="fa-brands fa-facebook f-icon-medium"></i>
-                                <i class="fa-brands fa-facebook f-icon-medium"></i>
-                            </div>
-                        </div>
-                        <div class="space-small"></div>
-                        <div class="identity-details">
-                            <h2>WAYS IN WHICH I IDENTIFY</h2>
-                            <p>I am 50-59 years old and identify as a Caucasian and Pacific Islander Female. </p>
-                            <p>My sexual orientation is: <br> Heterosexual</p>
-                            <p>My gender assigned at birth was: <br> Female</p>
-                            <p>I am living as a: <br> Female</p>
-                        </div>
-                        <div class="space-small"></div>
-                        <div class="treatment-details">
-                            <h2>MY TREATMENT STYLE IS</h2>
-                            <div class="style-name">
-                                <div class="column">
-                                    <p>Creative</p>
-                                    <p>Empowering</p>
-                                </div>
-                                <div class="column">
-                                    <p>Holistic</p>
-                                    <p>Humorous</p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Whith card end -->
-
-
-            </div>
+        <div class="gstpp-knowme__image">
+          <img src="zpstock-image-01.jpg" alt="">
         </div>
 
-        <div class="space-large"></div>
-        <div class="space-large"></div>
+        <div class="gstpp-knowme__style">
+          <div class="gstpp-knowme__style-title">
+            My Style:
+          </div>
 
-    </div>
-    <div class="field-details">
-        <div class="container">
-            <div class="field-wrapper">
-                <div class="space-small"></div>
-                <div class="head">GET TO KNOW ME</div>
-                <p>The quick brown fox jumped over the lazy dog. The quick brown fox jumped over the lazy dog. The quick
-                    brown fox jumped over the lazy dog. The quick brown fox jumped over the lazy dog. The quick brown
-                    fox jumped over the lazy dog. NEED TO KNOW HOW MANY CHARACTERS CAN FIT IN THE BOX AS DESIRED TO NOT
-                    MESS UP LAYOUT.</p>
-                <!-- <div class="space-small"></div> -->
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="genarel-section">
-
-            <!-- service include  -->
-            <div class="g-section">
-                <h2 class="g-section-title">The type(s) of programs offered with my services include:</h2>
-                <div class="g-grid-container">
-                    <div class="g-grid-item">Activity, Fitness, Recreational</div>
-                    <div class="g-grid-item">Empowerment Retreat for Women</div>
-                    <div class="g-grid-item">Sensory Friendly</div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- circle badge  -->
-    <div class="container">
-        <div class="religious-section">
-            <div class="circle-badge">
-                <div class="circle-text">
-                    RELIGIOUS<br>INCLUSION
-                </div>
-            </div>
-            <div class="content-box">
-                <div class="content-title">Religion Focused on in My Support:</div>
-                <div class="content-text">xxxx xxxx xxx x x x x x x x x x x x x x xxxxxxxx x x xxxxxx xxxx</div>
-            </div>
-        </div>
-    </div>
-
-    <!-- LICENSING + EDUCATION section-->
-
-    <div class="container">
-        <h2 class="head">LICENSING + EDUCATION</h2>
-        <div class="space-small"></div>
-        <!-- dual card wrapper -->
-        <div class="dual-column-layout">
-            <!-- Left Side: License Information -->
-            <div class="credentials-area">
-                <!-- First License -->
-                <div class="license-card">
-                    <p class="license-intro-text">
-                        My active license is as a <span class="bold-text">Licensed Clinical Social Worker (LCSW)
-                            Associate*</span> in the state of <span class="bold-text">Texas</span>. I have been licensed
-                        by the Texas Health and Human Services.
-                    </p>
-
-                    <div class="license-details-grid">
-                        <div class="detail-item">
-                            <span class="detail-label">License Number</span>
-                            <span class="detail-value">862758</span>
-                        </div>
-                        <div class="detail-item">
-                            <span class="detail-label">Licensed Date</span>
-                            <span class="detail-value">02/12/1989</span>
-                        </div>
-                        <div class="detail-item">
-                            <span class="detail-label">Expiration Date</span>
-                            <span class="detail-value">02/12/2027</span>
-                        </div>
-                    </div>
-
-                    <p class="supervisor-info">
-                        *I am supervised by Stephen F. Black
-                    </p>
-                </div>
-
-                <!-- Second License -->
-                <div class="license-card">
-                    <p class="license-intro-text">
-                        My active license is as a <span class="bold-text">Licensed Clinical Social Worker (LCSW)
-                            Associate</span> in the state of <span class="bold-text">Texas</span>. I have been licensed
-                        by the Texas Health and Human Services.
-                    </p>
-
-                    <div class="license-details-grid">
-                        <div class="detail-item">
-                            <span class="detail-label">License Number</span>
-                            <span class="detail-value">862758</span>
-                        </div>
-                        <div class="detail-item">
-                            <span class="detail-label">Licensed Date</span>
-                            <span class="detail-value">02/12/1989</span>
-                        </div>
-                        <div class="detail-item">
-                            <span class="detail-label">Expiration Date</span>
-                            <span class="detail-value">02/12/2027</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Right Side: Why I Chose My Specialties -->
-            <div class="specialties-box">
-                <h2 class="specialties-heading">Why I Chose My Specialties</h2>
-                <p class="specialties-description">
-                    The quick brown fox jumped over the lazy dog. How many characters can I have here to make everything
-                    fit well.
-                </p>
-            </div>
+          <div class="gstpp-knowme__style-list">
+            {{My_Style_Is}}
+          </div>
         </div>
 
+      </div>
 
-        <!-- dual card wrapper end -->
+      <!-- RIGHT COLUMN -->
+      <div class="gstpp-knowme__right">
 
-    </div>
-    <!-- LICENSING + EDUCATION section end-->
-    <!-- address wrap section  -->
-    <div class="bg-teal">
-        <div class="container">
-            <div class="address-wrapper">
-                <div>General Practice Areas Addressed</div>
-                <div>Specialties Addressed</div>
-                <div>Treatment Modalities Addressed</div>
-            </div>
+        <h2 class="gstpp-knowme__title">
+          Get to Know Me
+        </h2>
+
+        <div class="gstpp-knowme__block">
+          <div class="gstpp-knowme__subtitle">
+            Why I got into this field:
+          </div>
+
+          <div class="gstpp-knowme__text">
+            {{Why_I_Got_Into_Field}}
+          </div>
         </div>
-    </div>
-    <!-- address wrap section  end-->
 
-    <!-- cta first visit  -->
+        <div class="gstpp-knowme__block">
+          <div class="gstpp-knowme__subtitle">
+            What to expect your first visit:
+          </div>
 
-    <div class="bg-img">
-        <div class="container">
-            <div class="content-holder">
-                <h2 class="txt-teal">What to Expect Your First Visit</h2>
-
-                <p>The quick brown fox jumped over the lazy dog. The quick brown fox jumped over the lazy dog. The quick
-                    brown fox jumped over the lazy dog. The quick brown fox jumped over the lazy dog. The quick brown
-                    fox jumped over the lazy dog. NEED TO KNOW HOW MANY CHARACTERS CAN FIT IN THE BOX AS DESIRED TO NOT
-                    MESS UP LAYOUT.</p>
-
-            </div>
+          <div class="gstpp-knowme__text">
+            {{What_to_Expect_1st_Visit}}
+          </div>
         </div>
-    </div>
 
-
-    <!-- cta first visit end -->
-
-    <!-- Location section  -->
-    <div class="bg-yellow">
-        <div class="container">
-            <h1 class="page-header">LOCATION + HOURS</h1>
-
-            <!-- First Section -->
-            <div class="first-row">
-                <div class="virtual-bar">
-                    My practice is completely virtual.
-                </div>
-
-                <div class="hours-panel">
-                    <div class="panel-header">Treatment Hours</div>
-                    <div class="panel-subtext">I see clients:</div>
-                    <div class="time-schedule">
-                        Monday, Tuesday, Saturday<br>
-                        7:00 am – 4:00 pm<br>
-                        <br>
-                        Tuesday<br>
-                        5:00 pm – 9:00 pm<br>
-                        <br>
-                        Wednesday<br>
-                        2:00 pm – 10:00 pm<br>
-                        <br>
-                        Thursday<br>
-                        11:30 am – 2:00 pm<br>
-                        <br>
-                        Friday<br>
-                        5:00 pm – 2:00 am
-                    </div>
-                </div>
-            </div>
-
-            <div class="connect-area">
-                <div class="space-large"></div>
-                <div class="connect-label">How to Connect with Me</div>
-                <div class="icon-group">
-                    <div class="round-icon"><i class="fab fa-facebook-f"></i></div>
-                    <div class="round-icon"><i class="fab fa-facebook-f"></i></div>
-                    <div class="round-icon"><i class="fab fa-facebook-f"></i></div>
-                    <div class="round-icon"><i class="fab fa-facebook-f"></i></div>
-                    <div class="round-icon"><i class="fab fa-facebook-f"></i></div>
-                    <div class="round-icon"><i class="fab fa-facebook-f"></i></div>
-                    <div class="round-icon"><i class="fab fa-facebook-f"></i></div>
-                    <div class="round-icon"><i class="fab fa-facebook-f"></i></div>
-                    <div class="round-icon"><i class="fab fa-facebook-f"></i></div>
-                </div>
-            </div>
-
-            <div class="separator-word">
-                <h2>OR</h2>
-            </div>
-
-            <!-- Second Section -->
-            <div class="second-row">
-                <div class="left-content">
-                    <div class="map-box">
-                        <div class="map">
-
-                        </div>
-                    </div>
-
-                    <div class="info-grid">
-                        <div class="info-card">
-                            <div class="info-card-heading">Get Support Page for:</div>
-                            <div class="info-card-text">
-                                The Gulf Lands Point<br>
-                                2 min, Jasejun Rd<br>
-                                Braddwood ON, M4122
-                            </div>
-                        </div>
-
-                        <div class="info-card">
-                            <div class="info-card-heading">Hours of Operation:</div>
-                            <div class="info-card-text">
-                                Monday 7:00 am – 9:00 pm
-                            </div>
-                        </div>
-
-                        <div class="info-card">
-                            <div class="info-card-heading">Location Type:</div>
-                            <div class="info-card-text">
-                                Office<br>
-                                Virtual/Online, Online/Telehealth<br>
-                                Home/In person, Shows I location
-                            </div>
-                        </div>
-
-                        <div class="info-card">
-                            <div class="info-card-heading">Location Amenities:</div>
-                            <div class="info-card-text">
-                                Turkiew Bath room<br>
-                                Turkiew Parking<br>
-                                Gender-neutral bathrooms
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-
-                <div class="right-sidebar">
-                    <div class="hours-panel">
-                        <div class="panel-header">
-                            <h3>Treatment Hours</h3>
-                        </div>
-                        <div class="panel-subtext"><b>I see clients:</b></div>
-                        <div class="time-schedule">
-                            Monday, Tuesday, Saturday<br>
-                            7:00 am – 4:00 pm<br>
-                            <br>
-                            Tuesday<br>
-                            5:00 pm – 9:00 pm<br>
-                            <br>
-                            Wednesday<br>
-                            5:00 pm – 10:00 pm<br>
-                            <br>
-                            Friday<br>
-                            11:00 am – 5:00 pm<br>
-                            <br>
-                            Friday<br>
-                            5:00 pm – 2:00 am
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="connect-label">How to Connect with Me</div>
-            <div class="social-row">
-                <div class="fb-circle"><i class="fab fa-facebook-f"></i></div>
-                <div class="fb-circle"><i class="fab fa-facebook-f"></i></div>
-                <div class="fb-circle"><i class="fab fa-facebook-f"></i></div>
-                <div class="fb-circle"><i class="fab fa-facebook-f"></i></div>
-                <div class="fb-circle"><i class="fab fa-facebook-f"></i></div>
-                <div class="fb-circle"><i class="fab fa-facebook-f"></i></div>
-                <div class="fb-circle"><i class="fab fa-facebook-f"></i></div>
-                <div class="fb-circle"><i class="fab fa-facebook-f"></i></div>
-                <div class="fb-circle"><i class="fab fa-facebook-f"></i></div>
-            </div>
-        </div>
+      </div>
 
     </div>
 
-    <!-- Location section end -->
+  </div>
 
-    <!-- are section  -->
-    <div class="bg-blue">
-        <div class="container">
-            <div class="area-top-content">
-                <h2>AREAS I OFFER MENTAL HEALTH SERVICES FOR</h2>
-                <p>We service National Clientele. (vs. We service residents of the state of Texas or We service
-                    residents of the states of Texas and Oklahoma )</p>
-            </div>
-            <div class="space-large"></div>
-            <div class="area-wrapper">
-                <div class="cities">
-                    <h3>Cities</h3>
-                    <div>Beachwood</div>
-                    <div>Dripping Springs</div>
-                    <div>Lake of the Ozarks</div>
-                    <div>Mooselookmeguntic</div>
-                    <div>Winchester-on-the-Severn</div>
-                    <div>Mentor</div>
-                    <div>Cuyahoga Falls</div>
-                    <div>Minneapolis</div>
-                </div>
-                <div class="zip-code">
-                    <h3>Zip Code</h3>
-                    <div>44122</div>
-                    <div>44180</div>
-                    <div>44060</div>
-                    <div>78620</div>
-                    <div>78676</div>
-                    <div>44124</div>
-                    <div>98210</div>
-                    <div>60470</div>
-                </div>
-                <div class="counties">
-                    <h3>Counties</h3>
-                    <div>Hays</div>
-                    <div>Los Angeles</div>
-                    <div>Cuyahoga</div>
-                    <div>Comal</div>
-                    <div>Travis</div>
-                </div>
-                <div class="state">
-                    <h3>State</h3>
-                    <div>Texas</div>
-                    <div>Ohio</div>
-                    <div>Tennessee</div>
-                    <div>Florida</div>
-                    <div>Indiana</div>
-                    <div>Wisconsin</div>
-                    <div>Maine</div>
-                    <div>Utah</div>
-                    <div>California</div>
-                    <div>Oregon</div>
-                    <div>South Carolina</div>
-                    <div>Georgia</div>
-                </div>
-            </div>
-        </div>
-    </div>
+</section>
 
-    <!-- are section end -->
+<!-- Get to Know Me section End -->
 
-    <!-- carosoul photo  -->
-    <div class="bg-yellow">
-        <div class="container">
+<!-- Personal Identities + Lived Experience  -->
 
-            <div class="carosoul">
-                <div class="c-item">
-                    <h2>Photo</h2>
-                </div>
-                <div class="c-item">
-                    <h2>Photo</h2>
-                </div>
-                <div class="c-item">
-                    <h2>Photo</h2>
-                </div>
-                <div class="c-item">
-                    <h2>Photo</h2>
-                </div>
-                <div class="c-item">
-                    <h2>Photo</h2>
-                </div>
-            </div>
+
+<section class="gstpp-identities">
+
+  <div class="gstpp-identities__overlay">
+
+    <div class="gstpp-identities__inner">
+
+      <!-- LEFT COLUMN -->
+      <div class="gstpp-identities__left">
+
+        <h2 class="gstpp-identities__title">
+          Personal Identities +<br> Lived Experience
+        </h2>
+
+        
+
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <div class="gstpp-identities__right">
+
+        <div class="gstpp-identities__box">
+
+          <p>I am {{Date_of_Birth}} years old.</p>
+
+          <p>My pronouns are: {{Pronouns}}</p>
+
+          <p>I am {{Race}}</p>
+
+          <p>Languages I speak fluently: {{Languages_of_Fluency}}</p>
+
+          <p>I am proudly a {{Branch}}</p>
+
+          <p>My sexual orientation is: {{Sexual_Orientation}}</p>
+
+          <p>My gender assigned at birth was: {{Gender_Assigned_at_Birth}}</p>
+
+          <p>I am living as a: {{Living_as_Gender}}</p>
 
         </div>
-    </div>
 
-    <!-- carosoul photo end -->
-    <div class="space-large"></div>
-    <div class="space-small"></div>
-    <!-- section 2 with video holder  -->
-    <div class="container">
-        <h2 class="head" style="text-align: left;">UPCOMING EVENTS</h2>
-        <div class="text-video-section">
-            <div class="col2-section">
-                <div class="left-text-holder">
-                    <h2 class="head" style="text-align: left;">Empower Her 2025 Youth Wellness Conference</h2>
-                    <p>Event Details: Join us for a powerful Empower Her event, co-presented by Bastrop County Cares and
-                        BRIDGE nurturing connection, promoting self-care, and empowering mother sand daughters! -
-                        Exploring and improving mental well-being - Strengthening the mother-daughter relationship -
-                        Designed for 6th to 12th grade students. Through age-appropriate education and engaging
-                        activities, participants will discover creative approaches to emotional health, personal growth,
-                        and healing - tailored to their unique needs.</p>
-                </div>
-                <div class="video-card-holder">
-                    <div class="video-card">
-
-
-                        <div class="panel-header">
-                            <h4>When:</h4>
-                        </div>
-                        <div class="panel-subtext small-text"><b>Start:</b>September 27, 2025 at 8:00 AM</div>
-                        <div class="panel-subtext small-text"><b>End:</b>September 27, 2025 at 4:00 PM</div>
-                        <div class="space-small"></div>
-                        <div class="panel-header">
-                            <h4>Location:</h4>
-                        </div>
-                        <p class="fw-400" style="padding: 0 .5rem; text-align: center;">Hyatt Regency Lost Pines Resort
-                            & Spa575 Hyatt Lost Pines Rd. Cedar Creek, Texas 78612</p>
-                        <div class="space-large"></div>
-                        <div class="social-row">
-                            <div class="fb-circle"><i class="fab fa-facebook-f"></i></div>
-                            <div class="fb-circle"><i class="fab fa-facebook-f"></i></div>
-                            <div class="fb-circle"><i class="fab fa-facebook-f"></i></div>
-
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
-
-        </div>
+      </div>
 
     </div>
 
-    <!-- Flyer card section  -->
-    <div class="container">
-        <div class="top-info-icon">
-            <div class="info-circle">i</div>
+  </div>
+
+</section>
+
+<!-- Personal Identities + Lived Experience End -->
+
+<!-- Licensing + Education section  -->
+
+<section class="gstpp-license" id="gst-licensing">
+  <div class="gstpp-license__inner">
+
+    <div class="gstpp-license__pill">
+      <h2 class="gstpp-license__pill-title">LICENSING + EDUCATION</h2>
+    </div>
+
+    <div class="gstpp-license__grid">
+
+      <!-- Licensing -->
+      <div class="gstpp-license__block">
+        <h3 class="gstpp-license__block-title">Licensing</h3>
+
+        <div class="gstpp-license__table-wrap">
+          <table class="gstpp-license__table">
+            <thead>
+              <tr>
+                <th>License</th>
+                <th>License Number</th>
+                <th>License Date</th>
+                <th>Expiration Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>{{License_credentials}}</td>
+                <td>{{License_Number}}</td>
+                <td>{{Licensed_Date}}</td>
+                <td>{{License_Expiration_Date}}</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
+      </div>
 
-        <!-- Main Content -->
-        <div class="dual-section-layout">
-            <!-- Left: Flyer Box -->
-            <div class="poster-area">
-                <div class="poster-frame">
-                    <div class="corner-tag">Virtual Event</div>
-                    <div class="poster-text">Flyer</div>
-                </div>
-            </div>
+      <!-- Formal Education -->
+      <div class="gstpp-license__block">
+        <h3 class="gstpp-license__block-title">Formal Education</h3>
 
-            <!-- Right: Event Details -->
-            <div class="info-area">
-                <div class="info-line">
-                    <span class="info-label">Hosted By:</span>
-                    <span class="info-text"> Get Support Together</span>
-                </div>
-
-                <div class="info-line">
-                    <span class="info-label">Sponsored By:</span>
-                    <span class="info-text"> St. David’s Hospital, Hays County Health Department, Baylor Scott & White
-                        Health, University of Texas</span>
-                </div>
-
-                <div class="info-line">
-                    <span class="info-label">Event Type:</span>
-                    <span class="info-text"> Conference/Fundraising Event</span>
-                </div>
-
-                <div class="info-line">
-                    <span class="info-label">Event Cost:</span>
-                    <span class="info-text"> Free Event (with flashing heart) vs. narrative of ticket prices. Insurance
-                        Accepted (click for list)</span>
-                </div>
-
-                <div class="info-line">
-                    <span class="info-label">Registration:</span>
-                    <span class="info-text"> (No registration required, URL, open email, launch phone call)</span>
-                </div>
-                <!-- Religious Inclusion Banner -->
-                <div class="yellow-notice-box">
-                    <div class="notice-title">Religious Inclusion</div>
-                    <div class="notice-description small-text"><b>
-                            This event is being held with Jewish influence.<br>
-                            This is where there will be text about the relevance of religious<br>
-                            inclusion. I will need to know a maximum character count. </b>
-                    </div>
-                </div>
-            </div>
+        <div class="gstpp-license__table-wrap">
+          <table class="gstpp-license__table">
+            <thead>
+              <tr>
+                <th>Education</th>
+                <th>Areas of Specialty</th>
+                <th>Certification Name</th>
+                <th>Completion</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>{{College_or_University}}</td>
+                <td>{{Major_s}} {{Minor_s1}}</td>
+                <td>{{Certification_Name}}</td>
+                <td>{{Graduation_Date}}</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
+      </div>
+
+      <!-- Continuing Education -->
+      <div class="gstpp-license__block">
+        <h3 class="gstpp-license__block-title">Continuing Education</h3>
+
+        <div class="gstpp-license__table-wrap">
+          <table class="gstpp-license__table">
+            <thead>
+              <tr>
+                <th>Course</th>
+                <th>Obtained From</th>
+                <th>Areas of Focus</th>
+                <th>Treatment Modalities / Learned Applied</th>
+                <th>Completion Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>{{CE_Course_Title}}</td>
+                <td>{{Fellowship_Hospital}}</td>
+                <td>{{Areas_of_Focus}}</td>
+                <td>{{Treatment_Modalities}}</td>
+                <td>{{Graduation_Date}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
 
     </div>
 
-    <!-- Flyer card section end -->
-    <div class="container">
-        <div class="genarel-section">
+  </div>
+</section>
 
-            <!-- service include  -->
-            <div class="g-section">
-                <h2 class="g-section-title">MENTAL HEALTH INCLUSION</h2>
-                <div class="g-grid-container">
-                    <div class="g-grid-item">Family Systems Therapy</div>
-                    <div class="g-grid-item">Trauma Informed Care</div>
-                    <div class="g-grid-item">Anxiety Concerns</div>
-                    <div class="g-grid-item">Anxiety Concerns</div>
-                </div>
-            </div>
-            <div class="g-section">
-                <h2 class="g-section-title">COMMUNITIES SERVED</h2>
-                <div class="g-grid-container">
-                    <div class="g-grid-item bg-orange">LGBTQ+</div>
-                    <div class="g-grid-item bg-orange">LGBTQ+</div>
-                    <div class="g-grid-item bg-orange">LGBTQ+</div>
+<!-- Licensing + Education section  End -->
 
-                </div>
-            </div>
-        </div>
+<section class="gstpp-location-section" id="gst-location">
+  <div class="gstpp-location-section__inner">
+
+    <!-- heading -->
+    <div class="gstpp-section-pill">
+      <h2>LOCATION + HOURS</h2>
     </div>
-    <!-- check mark  -->
-    <div class="container">
-        <div class="ch-mark-box">
-            <div class="check">
-                <h4>Check <br> Mark</h4>
-            </div>
-            <div class="ch-details">
-                <h4>FOR MENTAL HEALTH PROFESSIONALS:</h4>
-                <p>5 Continuing Education credits are being offered from Joe’s Continuing Education Foundation.</p>
-            </div>
+
+    <!-- main card -->
+    <div class="gstpp-location-card">
+
+      <!-- left -->
+      <div class="gstpp-location-card__left">
+        <div class="gstpp-location-card__image">
+          <!-- map / location image / location photo -->
+          <img src="https://www.getsupporttogether.com/graphics/virtual-only-mental-health-support-get-support-together.png" alt="">
         </div>
-    </div>
-    <!-- check mark end -->
 
-    <!-- Services and Insurance section  -->
-    <div class="container">
-        <h2 class="head" style="text-align: left;">INVESTING IN YOUR WELL-BEING</h2>
-
-        <p class="intro-paragraph small-text fw-500">
-            I want to help ensure you are getting the appropriate mental health care at a cost affordable to you. Below
-            is my transparent billing practices.
-        </p>
-
-        <div class="two-column-grid">
-            <!-- Left Column: Services -->
-            <div class="services-column">
-                <h2 class="services-heading">Services with me are 100% FREE.*</h2>
-
-                <div>
-                    <p class="offer-subheading">I offer:</p>
-                    <div class="offer-list">
-                        <div class="offer-item">Free Consult</div>
-                        <div class="offer-item">Sliding Scale</div>
-                    </div>
-                </div>
-
-                <div class="payment-section">
-                    <p class="payment-heading">Payment Methods Accepted</p>
-                    <div class="payment-grid">
-                        <div class="payment-option">Apple Pay</div>
-                        <div class="payment-option">Cash</div>
-                        <div class="payment-option">Check</div>
-                        <div class="payment-option">Health Savings Account</div>
-                    </div>
-                </div>
-
-                <p class="disclaimer-note">
-                    *You must be a congregant to receive free mental health services.
-                </p>
-            </div>
-
-            <!-- Right Column: Insurance -->
-            <div class="insurance-box">
-                <h3 class="insurance-title">Insurance Carriers Accepted</h3>
-            </div>
+        <div class="gstpp-location-card__connect">
+          <h3>Connect with me:</h3>
+          <div class="gstpp-location-card__social">
+            <a href="{{Website}}"><i class="fa-solid fa-globe"></i></a>
+            <a href="{{YouTube_Channel}}"><i class="fa-brands fa-youtube"></i></a>
+            <a href="{{Blog}}"><i class="fa-brands fa-blogger"></i></a>
+            <a href="{{Facebook}}"><i class="fa-brands fa-facebook"></i></a>
+            <a href="{{Instagram}}"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="{{LinkedIn}}"><i class="fa-brands fa-square-linkedin"></i></a>
+            <a href="{{Tik_Tok}}"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="{{Twitter_X}}"><i class="fa-brands fa-square-x-twitter"></i></a>
+          </div>
         </div>
+      </div>
+
+      <!-- middle -->
+      <div class="gstpp-location-card__middle">
+        <div class="gstpp-location-company">{{Account_Name}}</div>
+        <div class="gstpp-location-line">{{Building_Name}}</div>
+        <div class="gstpp-location-line">{{Address}}</div>
+        <div class="gstpp-location-line">{{Address_Line_2}}</div>
+        <div class="gstpp-location-line">{{City_Loc}}, {{State}} {{Zip_Code}}</div>
+        <div class="gstpp-location-line">Main Phone: {{Phone_Main}}</div>
+        <div class="gstpp-location-line">Appointment Phone: {{Appointment_Line}}</div>
+        <div class="gstpp-location-line">Amenities: {{Location_amenities}}</div>
+      </div>
+
+      <!-- right -->
+      <div class="gstpp-location-card__right">
+        <div class="gstpp-hours-box">
+          <div class="gstpp-hours-box__title">Treatment Hours:</div>
+          <div class="gstpp-hours-box__body">
+            {{Treatment_Hours}}
+          </div>
+        </div>
+
+        <div class="gstpp-hours-box">
+          <div class="gstpp-hours-box__title">Group Programming:</div>
+          <div class="gstpp-hours-box__body">
+            {{Group_Programming}}
+          </div>
+        </div>
+
+        <div class="gstpp-hours-box">
+          <div class="gstpp-hours-box__title">Facility Open Hours:</div>
+          <div class="gstpp-hours-box__body">
+            {{Facility_Open_Hours}}
+          </div>
+        </div>
+      </div>
 
     </div>
 
+    <!-- virtual only image -->
+    <div class="gstpp-virtual-only">
+      <img src="https://www.getsupporttogether.com/graphics/virtual-only-mental-health-support-get-support-together.png" alt="My practice is completely virtual">
+    </div>
+
+    <!-- areas served -->
+    <section class="gstpp-areas-fixed">
+  <div class="gstpp-areas-fixed__inner">
+
+    <h2 class="gstpp-areas-fixed__title">Areas Served:</h2>
 
 
+    <div class="gstpp-areas-fixed__grid">
 
-    <script>
-        const hamburger = document.querySelector('.hamburger');
-        const navMenu = document.querySelector('.nav-menu');
+      <div class="gstpp-areas-fixed__col">
+        <h3 class="gstpp-areas-fixed__col-title">Cities</h3>
+        <div class="gstpp-areas-fixed__body">
+          {{City}}
+        </div>
+      </div>
 
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            navMenu.classList.toggle('active');
-        });
+      <div class="gstpp-areas-fixed__col">
+        <h3 class="gstpp-areas-fixed__col-title">Zip Codes</h3>
+        <div class="gstpp-areas-fixed__body">
+          {{Zip_Coe}}
+        </div>
+      </div>
 
-        // Close menu when clicking on a link
-        document.querySelectorAll('.nav-menu li a').forEach(link => {
-            link.addEventListener('click', () => {
-                hamburger.classList.remove('active');
-                navMenu.classList.remove('active');
-            });
-        });
-    </script>
+      <div class="gstpp-areas-fixed__col">
+        <h3 class="gstpp-areas-fixed__col-title">Counties</h3>
+        <div class="gstpp-areas-fixed__body">
+          {{County}}
+        </div>
+      </div>
+
+      <div class="gstpp-areas-fixed__col">
+        <h3 class="gstpp-areas-fixed__col-title">States</h3>
+        <div class="gstpp-areas-fixed__body">
+          {{State}}
+        </div>
+
+        <button class="gstpp-areas-fixed__more" type="button">
+          See more
+        </button>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+  </div>
+</section>
+
+<!-- How to Connect with Me -->
+<section class="gstpp-connect" id="gst-connect">
+  <div class="gstpp-connect__inner">
+
+    <h2 class="gstpp-connect__title">How to Connect with Me</h2>
+
+    <div class="gstpp-connect__grid">
+      <a class="gstpp-connect__item" href="{{Website}}"><i class="fa-solid fa-globe"></i></a>
+      <a class="gstpp-connect__item" href="{{YouTube_Channel}}"><i class="fa-brands fa-youtube"></i></a>
+      <a class="gstpp-connect__item" href="{{Blog}}"><i class="fa-brands fa-blogger"></i></a>
+      <a class="gstpp-connect__item" href="{{Facebook}}"><i class="fa-brands fa-facebook"></i></a>
+      <a class="gstpp-connect__item" href="{{Instagram}}"><i class="fa-brands fa-square-instagram"></i></a>
+      <a class="gstpp-connect__item" href="{{LinkedIn}}"><i class="fa-brands fa-linkedin"></i></a>
+      <a class="gstpp-connect__item" href="{{Tik_Tok}}"><i class="fa-brands fa-tiktok"></i></a>
+      <a class="gstpp-connect__item" href="{{Twitter_X}}"><i class="fa-brands fa-square-x-twitter"></i></a>
+    </div>
+
+  </div>
+</section>
+<!-- How to Connect with Me End-->
+
+<!-- Financial Considerations -->
+
+<section class="gstpp-finance" id="gst-finances">
+  <div class="gstpp-finance__inner">
+
+    <!-- heading pill -->
+    <div class="gstpp-finance__pill">
+      <h2 class="gstpp-finance__pill-title">FINANCIAL CONSIDERATIONS</h2>
+    </div>
+
+    <div class="gstpp-finance__grid">
+
+      <!-- Payment Information -->
+      <div class="gstpp-finance__card">
+        <div class="gstpp-finance__card-head"><h4>Payment Information</h4></div>
+        <div class="gstpp-finance__card-body">
+
+          <div class="gstpp-finance__group">
+            {{Payment_Methods}}
+          </div>
+
+          <div class="gstpp-finance__group">
+            {{N_Appt_Charges}}
+          </div>
+
+          <div class="gstpp-finance__group">
+            {{Free_Consult}}
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Flexible Payment Options -->
+      <div class="gstpp-finance__card">
+        <div class="gstpp-finance__card-head"><h4>Flexible Payment Options</h4></div>
+        <div class="gstpp-finance__card-body">
+
+          <div class="gstpp-finance__group">
+            {{Sliding_Scale1}}
+          </div>
+
+          <div class="gstpp-finance__group">
+            {{Victim_Funding}}
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Insurance Accepted -->
+      <div class="gstpp-finance__card">
+        <div class="gstpp-finance__card-head"><h4>Insurance Accepted</h4></div>
+        <div class="gstpp-finance__card-body">
+
+          <div class="gstpp-finance__group">
+            {{Insurance_Accepted}}
+          </div>
+
+          <button class="gstpp-finance__button" type="button">
+            See more
+          </button>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- Financial Considerations End-->
+
 </body>
-
 </html>
